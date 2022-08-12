@@ -14,7 +14,7 @@ import 'hardhat-gas-reporter';
 import 'hardhat-contract-sizer';
 import 'hardhat-deploy';
 
-import { getFeeWalletAddress, getMasterWallet, getTrustForwarder } from './config';
+// import { getFeeWalletAddress, getMasterWallet, getTrustForwarder } from './config';
 
 config();
 
@@ -112,14 +112,14 @@ const hardhatConfig: HardhatUserConfig = {
     timeout: 20000,
     color: true,
   },
-  etherscan: {
-    apiKey: process.env.ETH_API_KEY,
-  },
-  gasReporter: {
-    currency: 'USD',
-    enabled: Boolean(process.env.REPORT_GAS),
-    coinmarketcap: process.env.CMC_API_KEY,
-  },
+  // etherscan: {
+  //   apiKey: process.env.ETH_API_KEY,
+  // },
+  // gasReporter: {
+  //   currency: 'USD',
+  //   enabled: Boolean(process.env.REPORT_GAS),
+  //   coinmarketcap: process.env.CMC_API_KEY,
+  // },
   contractSizer: {
     alphaSort: true,
     disambiguatePaths: false,

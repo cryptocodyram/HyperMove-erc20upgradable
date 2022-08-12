@@ -9,19 +9,18 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     const { deployments, getNamedAccounts } = hre;
     const { deploy } = deployments;
 
-    log(chalk.blue(`loading fixtures for Multicall2`));
-    const { deployer, masterWallet } = await getNamedAccounts();
+    log(chalk.blue(`loading fixtures for HyperBurn`));
+    const { deployer } = await getNamedAccounts();
 
-    const multicall = await deploy('Multicall2', {
+    const HyperBurn = await deploy('HyperBurn', {
       from: deployer,
-      args: [masterWallet],
+      args: [],
       log: true,
       autoMine: true,
       skipIfAlreadyDeployed: true,
-      waitConfirmations: 5,
     });
 
-    log(chalk.green(`Multicall2 deployed with ${multicall.transactionHash} at ${multicall.address}`));
+    log(chalk.green(`HyperBurn deployed with ${HyperBurn.transactionHash} at ${HyperBurn.address}`));
   } catch (err) {
     if (err instanceof Error) {
       log(chalk.red(err.message));

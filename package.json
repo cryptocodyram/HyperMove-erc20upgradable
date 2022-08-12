@@ -1,9 +1,9 @@
 {
-  "name": "unifarm-yield-farming-v2-contracts",
+  "name": "Hypermove",
   "version": "1.0.0",
-  "description": "Unifarm V2 Yield Farming Modified Gamification FrameWork and Contracts",
+  "description": "",
   "main": "index.ts",
-  "author": "Bhupendra Bisht <bhupendra.bisht@oropocket.com>",
+  "author": "",
   "license": "MIT",
   "scripts": {
     "prettier": "prettier --write 'contracts/**/*.sol'",
