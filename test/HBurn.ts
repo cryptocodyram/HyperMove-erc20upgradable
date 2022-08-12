@@ -64,18 +64,18 @@ describe("HyperBurnUpgradeable Token", () => {
     describe("hBurn - mint and burn", () => {
         it("#mint - 1 Billion token", async () => {
             await expect(hBurn.connect(owner)
-                .mint(owner.address, ethers.utils.parseUnits('1000000000')))
+                .mint(owner.address, parse('1000000000')))
                 .to.be.emit(hBurn, "Transfer")
-                .withArgs(ZERO_ADDRESS, owner.address, ethers.utils.parseUnits('1000000000'))
+                .withArgs(ZERO_ADDRESS, owner.address, parse('1000000000'))
         })
         it("#burn - 500 million token", async () => {
             await expect(hBurn.connect(owner)
-                .burn(owner.address, ethers.utils.parseUnits('500000000')))
+                .burn(owner.address, parse('500000000')))
                 .to.be.emit(hBurn, "Transfer")
-                .withArgs(owner.address, ZERO_ADDRESS, ethers.utils.parseUnits('500000000'))
+                .withArgs(owner.address, ZERO_ADDRESS, parse('500000000'))
         })
         it("#totalSupply - 500 million tokens", async () => {
-            expect(await hBurn.totalSupply()).to.be.equals(ethers.utils.parseUnits('500000000'))
+            expect(await hBurn.totalSupply()).to.be.equals(parse('500000000'))
         })
     })
 })
