@@ -69,13 +69,41 @@ describe("HyperBurnUpgradeable Token", () => {
                 .withArgs(ZERO_ADDRESS, owner.address, parse('1000000000'))
         })
         it("#burn - 500 million token", async () => {
-            await expect(hBurn.connect(owner)
-                .burn(owner.address, parse('500000000')))
-                .to.be.emit(hBurn, "Transfer")
-                .withArgs(owner.address, ZERO_ADDRESS, parse('500000000'))
+            await expect(
+                hBurn.connect(owner).burn(owner.address, parse('500000000'))
+            ).to.be.emit(hBurn, "Transfer")
+            .withArgs(owner.address, ZERO_ADDRESS, parse('500000000'))
         })
         it("#totalSupply - 500 million tokens", async () => {
             expect(await hBurn.totalSupply()).to.be.equals(parse('500000000'))
+        })
+        it("#transfer", async () => {
+            await expect(
+                hBurn.connect(owner).transfer(address1.address, parse('100000000'))
+            ).to.be.emit(hBurn, "Transfer")
+            .withArgs(owner.address, address1.address, parse('100000000'))
+        })
+        it("#balanceOf", async () => {
+            expect(
+                await hBurn.balanceOf(address1.address)
+            ).to.be.equals(parse('100000000'))
+        })
+    })
+
+    describe("HBurn Ownable", () => {
+        it("#transferOwnership - new owner can not be Zero-address", async () => {
+            await expect(
+                hBurn.connect(owner).transferOwnership(ZERO_ADDRESS)
+            ).to.be.rejectedWith("Ownable: new owner is the zero address")
+        })
+        it("#transferOwnership", async () => {
+            await expect(
+                hBurn.connect(owner).transferOwnership(address1.address)
+            ).to.be.emit(hBurn, "OwnershipTransferred")
+            .withArgs(owner.address, address1.address)
+        })
+        it("#owner", async () => {
+            expect(await hBurn.owner()).to.be.equals(address1.address)
         })
     })
 })
