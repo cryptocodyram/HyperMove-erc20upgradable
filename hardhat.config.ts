@@ -69,27 +69,27 @@ const hardhatConfig: HardhatUserConfig = {
         },
       },
     },
-    ethereum: {
-      url: process.env.ETH_RPC_URL,
-      accounts,
-      saveDeployments: true,
-      loggingEnabled: true,
-      live: true,
-      tags: ["eth-testnet", "staging"],
-      verify: {
-        etherscan: {
-          apiKey: process.env.ETH_API_KEY,
-        },
-      },
-    },
-    bsc: {
-      url: process.env.BSC_RPC_URL,
-      accounts,
-      saveDeployments: true,
-      loggingEnabled: true,
-      live: true,
-      tags: ["bsc-testnet", "staging"],
-    },
+    // ethereum: {
+    //   url: process.env.ETH_RPC_URL,
+    //   accounts,
+    //   saveDeployments: true,
+    //   loggingEnabled: true,
+    //   live: true,
+    //   tags: ["eth-testnet", "staging"],
+    //   verify: {
+    //     etherscan: {
+    //       apiKey: process.env.ETH_API_KEY,
+    //     },
+    //   },
+    // },
+    // bsc: {
+    //   url: process.env.BSC_RPC_URL,
+    //   accounts,
+    //   saveDeployments: true,
+    //   loggingEnabled: true,
+    //   live: true,
+    //   tags: ["bsc-testnet", "staging"],
+    // },
   },
   solidity: {
     version: "0.8.10",
