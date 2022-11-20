@@ -1,8 +1,8 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/samurai/my-desk/hustle/Token-contract/contracts/HyperBurnUpgradeable.sol": {
-      "lastModificationDate": 1660319454744,
+    "/home/samurai/work-environment/hustle/Token-contract/contracts/HyperBurnUpgradeable.sol": {
+      "lastModificationDate": 1668932541124,
       "contentHash": "84a9e7098ecedf15e0e13e710d806ced",
       "sourceName": "contracts/HyperBurnUpgradeable.sol",
       "solcConfig": {
@@ -20,12 +20,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -41,8 +47,8 @@
         "HyperBurnUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
-      "lastModificationDate": 1660319782791,
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1668932234687,
       "contentHash": "403ce8273abde646bff81558ddf512ad",
       "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
       "solcConfig": {
@@ -60,12 +66,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -80,9 +92,9 @@
         "OwnableUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
-      "lastModificationDate": 1660319783371,
-      "contentHash": "f6a254bc3e3c9c456a7a630fc4cb8ca4",
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
+      "lastModificationDate": 1668932239683,
+      "contentHash": "3731d62752408e56578b89ac293659c6",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -99,12 +111,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -121,9 +139,9 @@
         "ERC20Upgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
-      "lastModificationDate": 1660319783371,
-      "contentHash": "b98e2f3a856e6e7f2106fb919bacab9e",
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1668932239683,
+      "contentHash": "e9b0b058deea0144d9399002b67229f2",
       "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -140,12 +158,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -159,8 +183,8 @@
         "Initializable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
-      "lastModificationDate": 1660319782791,
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1668932234699,
       "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
       "solcConfig": {
@@ -178,12 +202,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -197,9 +227,9 @@
         "ContextUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
-      "lastModificationDate": 1660319782791,
-      "contentHash": "d42e87f4fba2b03ab4d3c14cb53d0c51",
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1668932234699,
+      "contentHash": "228f256dbb21393bc9ad02648e222f74",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -216,12 +246,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -233,8 +269,8 @@
         "AddressUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
-      "lastModificationDate": 1660319783371,
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
+      "lastModificationDate": 1668932239683,
       "contentHash": "a9ed3c7bc7d9ebb5e34f20829274f088",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
       "solcConfig": {
@@ -252,12 +288,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -269,8 +311,8 @@
         "IERC20Upgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
-      "lastModificationDate": 1660319783639,
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
+      "lastModificationDate": 1668932241751,
       "contentHash": "9efcd5467a7f0bf533910ee8a267adb2",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
       "solcConfig": {
@@ -288,12 +330,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -307,9 +355,184 @@
         "IERC20MetadataUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol": {
-      "lastModificationDate": 1660319783639,
-      "contentHash": "9c9a433acb6324ceaaa657c804f1a03c",
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol": {
+      "lastModificationDate": 1668932239639,
+      "contentHash": "4022a2f2e92f5c281d1a2cdae10a9e6b",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ECDSAUpgradeable.sol",
+        "../../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712Upgradeable"
+      ]
+    },
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol": {
+      "lastModificationDate": 1668932239683,
+      "contentHash": "b3e120a8002394aabbbc467369cd7390",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../StringsUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSAUpgradeable"
+      ]
+    },
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
+      "lastModificationDate": 1668932234699,
+      "contentHash": "3805d0267faeda96624b50a67ca89f08",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./math/MathUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StringsUpgradeable"
+      ]
+    },
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol": {
+      "lastModificationDate": 1668932239683,
+      "contentHash": "469f71655418cc5f328fcc9bfdf10e9a",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MathUpgradeable"
+      ]
+    },
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol": {
+      "lastModificationDate": 1668932241751,
+      "contentHash": "7d4be7fcaac0d92168c70737f03e00be",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpgradeable.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -326,12 +549,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -350,9 +579,9 @@
         "ERC20VotesUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-ERC20PermitUpgradeable.sol": {
-      "lastModificationDate": 1660319783639,
-      "contentHash": "0109bc74226813045cdebae4027b777d",
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-ERC20PermitUpgradeable.sol": {
+      "lastModificationDate": 1668932241751,
+      "contentHash": "8bce39d1c92a8a00597c31ef2fe40eb1",
       "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-ERC20PermitUpgradeable.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -369,20 +598,26 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
       "imports": [
         "./draft-IERC20PermitUpgradeable.sol",
         "../ERC20Upgradeable.sol",
-        "../../../utils/cryptography/draft-EIP712Upgradeable.sol",
         "../../../utils/cryptography/ECDSAUpgradeable.sol",
+        "../../../utils/cryptography/EIP712Upgradeable.sol",
         "../../../utils/CountersUpgradeable.sol",
         "../../../proxy/utils/Initializable.sol"
       ],
@@ -393,44 +628,8 @@
         "ERC20PermitUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol": {
-      "lastModificationDate": 1660319783375,
-      "contentHash": "bd2782c8789a3d3084d67c351a55ab92",
-      "sourceName": "@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.10",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "MathUpgradeable"
-      ]
-    },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/governance/utils/IVotesUpgradeable.sol": {
-      "lastModificationDate": 1660319783363,
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/governance/utils/IVotesUpgradeable.sol": {
+      "lastModificationDate": 1668932239683,
       "contentHash": "432a27bbcb26badb3d40e9fb214d09f9",
       "sourceName": "@openzeppelin/contracts-upgradeable/governance/utils/IVotesUpgradeable.sol",
       "solcConfig": {
@@ -448,12 +647,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -465,9 +670,9 @@
         "IVotesUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/math/SafeCastUpgradeable.sol": {
-      "lastModificationDate": 1660319783375,
-      "contentHash": "00d9c0b8534f648176c53b50a914c19a",
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/math/SafeCastUpgradeable.sol": {
+      "lastModificationDate": 1668932239683,
+      "contentHash": "8565f9d83dfbed34d9ff896c02e23ae7",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/math/SafeCastUpgradeable.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -484,12 +689,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -501,121 +712,8 @@
         "SafeCastUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol": {
-      "lastModificationDate": 1660319783375,
-      "contentHash": "57eba3b8fbf5ed2f2baa7dfdb7beb693",
-      "sourceName": "@openzeppelin/contracts-upgradeable/utils/cryptography/ECDSAUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.10",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../StringsUpgradeable.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ECDSAUpgradeable"
-      ]
-    },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-IERC20PermitUpgradeable.sol": {
-      "lastModificationDate": 1660319783639,
-      "contentHash": "afab576c4d1f55fbf293a0daf3826e31",
-      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-IERC20PermitUpgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.10",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC20PermitUpgradeable"
-      ]
-    },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol": {
-      "lastModificationDate": 1660319783375,
-      "contentHash": "58bfd44eb122c6d88351e8eda0590068",
-      "sourceName": "@openzeppelin/contracts-upgradeable/utils/cryptography/draft-EIP712Upgradeable.sol",
-      "solcConfig": {
-        "version": "0.8.10",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./ECDSAUpgradeable.sol",
-        "../../proxy/utils/Initializable.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "EIP712Upgradeable"
-      ]
-    },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol": {
-      "lastModificationDate": 1660319782791,
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol": {
+      "lastModificationDate": 1668932234699,
       "contentHash": "2e908c762a799baea365e68a50500e2c",
       "sourceName": "@openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol",
       "solcConfig": {
@@ -633,12 +731,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -650,10 +754,10 @@
         "CountersUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
-      "lastModificationDate": 1660319782791,
-      "contentHash": "b9d00086379b2524eb287c850a1b2e54",
-      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+    "/home/samurai/work-environment/hustle/Token-contract/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-IERC20PermitUpgradeable.sol": {
+      "lastModificationDate": 1668932241751,
+      "contentHash": "afab576c4d1f55fbf293a0daf3826e31",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/draft-IERC20PermitUpgradeable.sol",
       "solcConfig": {
         "version": "0.8.10",
         "settings": {
@@ -669,12 +773,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -683,11 +793,11 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "StringsUpgradeable"
+        "IERC20PermitUpgradeable"
       ]
     },
-    "/home/samurai/my-desk/hustle/Token-contract/contracts/HyperMoveUpgradeable.sol": {
-      "lastModificationDate": 1660319454744,
+    "/home/samurai/work-environment/hustle/Token-contract/contracts/HyperMoveUpgradeable.sol": {
+      "lastModificationDate": 1668932560475,
       "contentHash": "ea31f9132d8c44279eb0fe20044d0386",
       "sourceName": "contracts/HyperMoveUpgradeable.sol",
       "solcConfig": {
@@ -705,12 +815,18 @@
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
                 "metadata",
-                "storageLayout"
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
