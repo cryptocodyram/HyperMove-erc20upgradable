@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "test": "set REPORT_GAS=true & hardhat test",
-    "deploy": "hardhat --network polygon deploy --deploy-scripts ./deploy/testnet --report-gas",
+    "deploy": "hardhat --network polygon deploy --deploy-scripts ./deploy/mainet --report-gas",
     "verify": "hardhat --network polygon etherscan-verify --license 'UNLICENSED' --force-license",
     "prettier": "prettier --write contracts/**/*.sol",
     "compile": "hardhat compile",
@@ -25,6 +25,7 @@
     "chalk": "^5.1.2",
     "cli-progress": "^3.11.2",
     "dotenv": "^16.0.3",
+    "ethereumjs-util": "^7.1.5",
     "hardhat-deploy": "^0.11.20",
     "lodash": "^4.17.21",
     "openzeppelin-solidity": "^4.6.0",
