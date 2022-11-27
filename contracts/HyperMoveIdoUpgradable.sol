@@ -6,7 +6,6 @@ import "./IERC20.sol";
 
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import "hardhat/console.sol";
 
 /**
  * @title The HyperMovePresaleUpgradeable
@@ -37,9 +36,6 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
 
     /// @notice The contract instance of HyperMove token
     IERC20 public hyperMove;
-
-    /// @notice The price numerator of hyper move
-    uint256 public constant PRICE_NUMERATOR = 1000000;
 
     /// @notice The price of hyper move token
     uint256 public hyperMovePrice;
@@ -294,6 +290,5 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
         returns (uint256)
     {
         return (amount * hyperMovePrice);
-        // return (amount * PRICE_NUMERATOR) / (hyperMovePrice * 1e9);
     }
 }

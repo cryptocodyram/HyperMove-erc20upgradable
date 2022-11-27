@@ -847,8 +847,8 @@
       ]
     },
     "/home/samurai/work-environment/hustle/Token-contract/contracts/HyperMoveIdoUpgradable.sol": {
-      "lastModificationDate": 1669516206827,
-      "contentHash": "9c797facca1afd94764aec1099c586e2",
+      "lastModificationDate": 1669519132107,
+      "contentHash": "e64bf639f236117ca73f82f8a2da5255",
       "sourceName": "contracts/HyperMoveIdoUpgradable.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -883,8 +883,7 @@
       "imports": [
         "./IERC20.sol",
         "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
-        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
-        "hardhat/console.sol"
+        "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol"
       ],
       "versionPragmas": [
         "=0.8.10"
