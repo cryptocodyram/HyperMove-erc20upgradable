@@ -55,9 +55,6 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
     /// @notice The identifier to check if sale ends
     bool public isSaleEnd;
 
-    /// @notice The list of hyper move user allocation
-    mapping(address => uint256) public hyperMoveUserAllocation;
-
     /// @notice The list of user purchases
     mapping(address => uint256) public userPurchases;
 
