@@ -15,8 +15,6 @@ import "hardhat/console.sol";
  * @notice Performs HyperMove presale & claim
  */
 contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
-    // /// @dev Receive BUSD
-    // receive() external payable {}
 
     /// @dev The presale info
     struct PreSaleInfo {
@@ -35,7 +33,7 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
     address public adminWallet;
 
     /// @notice The contract instance of BUSD token
-    IERC20 public bUSD;
+    IERC20 public BUSD;
 
     /// @notice The contract instance of HyperMove token
     IERC20 public hyperMove;
@@ -52,8 +50,11 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
     /// @notice The number of total users participated
     uint256 public totalUsersParticipated;
 
-    /// @notice The identifier for public sale
-    bool public isPublicSale;
+    /// @notice the identifier to check if sale started
+    bool public isSaleStarted;
+
+    /// @notice The identifier for activate Claimable
+    bool public isClaimable;
 
     /// @notice The identifier to check if sale ends
     bool public isSaleEnd;
@@ -124,7 +125,7 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
             "Invalid Args"
         );
 
-        bUSD = IERC20(_busd);
+        BUSD = IERC20(_busd);
         hyperMove = IERC20(_hyperMove);
         hyperMovePrice = _hyperMovePrice;
         adminWallet = _adminWallet;
@@ -138,30 +139,21 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
     }
 
     /**
-     * @notice Switch sale flag of HyperMove
-     * @dev Call by current owner of HyperMove presale
-     * @param saleFlag The status of sale flag
+     * @notice set is sale started
+     * @dev call by current owner
+     * @param startStatus the status of sale start
      */
-    function switchSalePhase(bool saleFlag) external onlyOwner {
-        isPublicSale = saleFlag;
+    function setSaleStarted(bool startStatus) external onlyOwner {
+        isSaleStarted = startStatus;
     }
 
     /**
-     * @notice Sets HyperMove users private sale allocations
+     * @notice set is claimable of HyperMove
      * @dev Call by current owner of HyperMove presale
-     * @param users The list of private sale users
-     * @param tokens The list of user HyperMove allocations
+     * @param claimStatus The status of sale flag
      */
-    function setHyperMoveUsersAllocation(
-        address[] memory users,
-        uint256[] memory tokens
-    ) external onlyOwner {
-        uint8 usersCount = uint8(users.length);
-        require(usersCount > 0 && usersCount == tokens.length);
-        for (uint8 j = 0; j < usersCount; j++) {
-            require(users[j] != address(0) && tokens[j] > 0, "Mismatch Args");
-            hyperMoveUserAllocation[users[j]] = tokens[j];
-        }
+    function setIsClaimable(bool claimStatus) external onlyOwner {
+        isClaimable = claimStatus;
     }
 
     /**
@@ -220,6 +212,7 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
         // verify the purchase
         _verifyPurchase(amount);
 
+        require(isSaleStarted, "Sale not yet started");
         require(!isSaleEnd, "Sale Ends");
 
         require(
@@ -227,7 +220,7 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
             "Purchase Cap Reached"
         );
 
-        require(bUSD.transferFrom(_msgSender(), adminWallet, amount), "token transfer failed");
+        require(BUSD.transferFrom(_msgSender(), adminWallet, amount), "token transfer failed");
 
         raisedBUSD += amount;
 
@@ -257,26 +250,6 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
     }
 
     /**
-     * @notice Withdraw raised BUSD
-     * @dev Throw error when withdraw failed &
-     * Call by current owner of HyperMove presale
-     * @param withdrawableAddress The account of withdrawable
-     * @param value The value to be withdraw
-     */
-    function withdraw(address withdrawableAddress, uint256 value)
-        external
-        onlyOwner
-    {
-        require(
-            withdrawableAddress != address(0),
-            "Invalid Withdrawable Address"
-        );
-        require(address(this).balance >= value, "Invalid Value");
-        (bool success, ) = withdrawableAddress.call{value: value}("");
-        require(success, "Withdraw Failed");
-    }
-
-    /**
      * @notice Rescue Any Token
      * @dev Call by current owner of HyperMove presale
      * @param withdrawableAddress The account of withdrawable
@@ -301,9 +274,7 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
      * @param amount The amount to buy
      */
     function _verifyPurchase(uint256 amount) internal view {
-        uint256 maxAllocation = isPublicSale
-            ? preSaleInfo.maxAllocation
-            : hyperMoveUserAllocation[_msgSender()];
+        uint256 maxAllocation = preSaleInfo.maxAllocation;
         require(
             amount >= preSaleInfo.minAllocation &&
                 amount <= maxAllocation &&

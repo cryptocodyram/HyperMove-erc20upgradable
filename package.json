@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "test": "set REPORT_GAS=true & hardhat test",
-    "deploy": "hardhat --network polygon deploy --deploy-scripts ./deploy/mainet --report-gas",
-    "verify": "hardhat --network polygon etherscan-verify --license 'UNLICENSED' --force-license",
+    "deploy": "hardhat --network bsc deploy --deploy-scripts ./deploy/testnet --report-gas",
+    "verify": "hardhat --network bsc etherscan-verify --license 'UNLICENSED' --force-license",
     "prettier": "prettier --write contracts/**/*.sol",
     "compile": "hardhat compile",
     "coverage": "hardhat coverage",

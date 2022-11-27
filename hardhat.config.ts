@@ -82,14 +82,14 @@ const hardhatConfig: HardhatUserConfig = {
     //     },
     //   },
     // },
-    // bsc: {
-    //   url: process.env.BSC_RPC_URL,
-    //   accounts,
-    //   saveDeployments: true,
-    //   loggingEnabled: true,
-    //   live: true,
-    //   tags: ["bsc-testnet", "staging"],
-    // },
+    bsc: {
+      url: process.env.BSC_RPC_URL,
+      accounts,
+      saveDeployments: true,
+      loggingEnabled: true,
+      live: true,
+      tags: ["bsc-testnet", "staging"],
+    },
   },
   solidity: {
     version: "0.8.10",
@@ -109,27 +109,6 @@ const hardhatConfig: HardhatUserConfig = {
       97: 0,
       137: 0,
     },
-    // feeWallet: {
-    //   1: getFeeWalletAddress(),
-    //   4: getFeeWalletAddress(),
-    //   56: getFeeWalletAddress(),
-    //   97: getFeeWalletAddress(),
-    //   137: getFeeWalletAddress(),
-    // },
-    // masterWallet: {
-    //   1: getMasterWallet(),
-    //   4: getMasterWallet(),
-    //   56: getMasterWallet(),
-    //   97: getMasterWallet(),
-    //   137: getFeeWalletAddress(),
-    // },
-    // trustForwarder: {
-    //   1: getTrustForwarder(),
-    //   4: getTrustForwarder(),
-    //   56: getTrustForwarder(),
-    //   97: getTrustForwarder(),
-    //   137: getFeeWalletAddress(),
-    // },
   },
   paths: {
     sources: "./contracts",
@@ -142,7 +121,7 @@ const hardhatConfig: HardhatUserConfig = {
     color: true,
   },
   etherscan: {
-    apiKey: process.env.ETH_API_KEY,
+    apiKey: process.env.BSC_API_KEY,
   },
   gasReporter: {
     currency: "USD",
