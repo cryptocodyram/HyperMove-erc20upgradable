@@ -847,8 +847,8 @@
       ]
     },
     "/home/samurai/work-environment/hustle/Token-contract/contracts/HyperMoveIdoUpgradable.sol": {
-      "lastModificationDate": 1669462538274,
-      "contentHash": "d5fc51f327f70e824ab1f31698179b82",
+      "lastModificationDate": 1669516206827,
+      "contentHash": "9c797facca1afd94764aec1099c586e2",
       "sourceName": "contracts/HyperMoveIdoUpgradable.sol",
       "solcConfig": {
         "version": "0.8.10",

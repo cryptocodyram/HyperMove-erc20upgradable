@@ -36,7 +36,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
               args: [
                 hMove.address,
                 busd.address,
-                100,
+                200,
                 parse("100"),
                 parse("3000"),
                 parse("50000"),
