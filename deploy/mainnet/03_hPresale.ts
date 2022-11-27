@@ -34,13 +34,13 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
             init: {
               methodName: "__HyperMovePresaleUpgradeable_init",
               args: [
-                "0x5cAcd251548940283e4EC9Bff383EEd4f92Dd930",
-                "0xa06922220dbEC7784B672E3A144F8B2F3B182f68",
-                200,
-                parse("100"),
-                parse("3000"),
-                parse("50000"),
-                "0xA194E186267FdD49E2Ef9B01AD143768DC75E2c4",
+                "0x5cAcd251548940283e4EC9Bff383EEd4f92Dd930", // busd
+                "0xa06922220dbEC7784B672E3A144F8B2F3B182f68", //hMove
+                200, // per usd ufarm
+                parse("100"), // min
+                parse("3000"), // max
+                parse("50000"), // purchasecap
+                "0xA194E186267FdD49E2Ef9B01AD143768DC75E2c4", // admin wallet
               ],
             },
           },

@@ -15,7 +15,9 @@
     "./test",
     "./deploy",
     "./scripts",
-    "types.ts"
+    "types.ts",
+    "01_hMove.ts",
+    "02_busd.ts"
   ],
   "files": [
     "./hardhat.config.ts"

@@ -170,6 +170,10 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
         hyperMove = IERC20(_hyperMove);
     }
 
+    function updateBUSD(address _busd) external onlyOwner {
+        BUSD = IERC20(_busd);
+    }
+
     /**
      * @notice Update presale info
      * @dev Call by current owner of HyperMove presale
@@ -234,7 +238,7 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
     function claimHyperMove() external {
         uint256 purchaseAmount = userPurchases[_msgSender()];
         require(purchaseAmount > 0, "Invalid Attempt");
-        require(isSaleEnd, "Sale Not Ends Yet");
+        require(isClaimable, "Claiming Not startes");
 
         // reset to 0
         userPurchases[_msgSender()] = 0;
@@ -273,7 +277,6 @@ contract HyperMovePresaleUpgradeable is Initializable, OwnableUpgradeable {
         uint256 maxAllocation = preSaleInfo.maxAllocation;
         require(
             amount >= preSaleInfo.minAllocation &&
-                amount <= maxAllocation &&
                 userPurchases[_msgSender()] + amount <= maxAllocation,
             "Buy Failed"
         );
